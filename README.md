@@ -131,6 +131,22 @@ Step 6: index documents to Elasticsearch, following statement split the big file
 
 
 
+Step 7: Update ot delete indexed documents.
+
+There are couple of ways to delete/update.
+
+Delete options
+
+1. if we have the ID of the document then query will delete the existing document.
+reference - https://www.elastic.co/guide/en/elasticsearch/reference/8.10/docs-delete.html
+2. if we have a query that matches X number of records then delete_by_query query can delete all X documents. 
+reference - https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-delete-by-query.html
+
+update options:
+1. 1. if we have the ID of the document in ES then we can send new document with that ID and ES will overwrite the existing document. 
+reference - https://www.elastic.co/guide/en/elasticsearch/reference/8.10/docs-update.html
+2. if we have a query that matches X number of records then update_by_query query can update all X documents using a script that instructs how the documents should be updated. 
+reference - https://www.elastic.co/guide/en/elasticsearch/reference/8.10/docs-update-by-query.html
 
 
 
