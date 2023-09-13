@@ -1,0 +1,44 @@
+{
+    "mappings": {
+      "dynamic_templates": [
+        {
+          "strings": {
+            "path_match": "*",
+            "match_mapping_type": "string",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        }
+      ],
+      "properties": {
+        "_split_id": {
+          "type": "long"
+        },
+        "character": {
+          "type": "keyword"
+        },
+        "content": {
+          "type": "text"
+        },
+        "content_type": {
+          "type": "keyword"
+        },
+        "name": {
+          "type": "keyword"
+        },
+        "permalink": {
+          "type": "keyword"
+        },
+        "source_title": {
+          "type": "keyword"
+        },
+        "embedding": {
+          "type": "dense_vector",
+          "dims": 768,
+          "index": true,
+          "similarity": "cosine"
+        }
+      }
+    }
+  }
