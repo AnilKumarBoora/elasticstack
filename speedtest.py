@@ -15,7 +15,7 @@ model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
 fake = Faker()
 
 # Number of documents to generate
-num_sentences_per_document = 10
+num_sentences_per_document = 1
 
 
 

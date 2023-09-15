@@ -6,7 +6,7 @@ APIKEY=b3VXUGo0b0JfelFiRnJ0VmdJVm46bENEUTVFbE5UbnVMUTBkREVPMXYtQQ==
 ES_URL_CREDS=https://elastic:JVPfhFPSNmLGpk-Rwjm0@localhost:9200
 ES_URL=https://localhost:9200
 
-Step 1. Check the .env file and set the password for your environment.
+Step 1. Check the .env file and set the password, ES container memory limit for your environment.
 
 Step 2. Run following command from root folder of this project to start containers for Elasticsearch and Kibana.
 
@@ -49,7 +49,7 @@ It will provide response similar to following and encoded attribute can be used 
 }```
 
 
-Step 5: create document index schema from Kibana - Dev tools
+Step 5: create document index schema from Kibana - Dev tools (if you never require embedding in search results then schema from mapping_optimized.json file, this schema will have a smaller memory footprint and queries are more likely to be faster)
 ```PUT document
 {
   "mappings": {
