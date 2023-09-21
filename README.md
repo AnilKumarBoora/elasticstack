@@ -149,4 +149,4 @@ reference - https://www.elastic.co/guide/en/elasticsearch/reference/8.10/docs-up
 reference - https://www.elastic.co/guide/en/elasticsearch/reference/8.10/docs-update-by-query.html
 
 
-
+Step 8: Search queries are in search_queries.txt file.
